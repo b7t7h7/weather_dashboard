@@ -1,0 +1,112 @@
+
+heading {
+    display: block;
+    background-color: rgb(139, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.fas, .fa-bolt {
+    color: goldenrod;
+}
+
+aside {
+    font-weight: bold;
+}
+
+/* Style the search field */
+.search input[type=text] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+  
+/* Style the submit button */
+.search button {
+    float: left;
+    width: 20%;
+    height: 47.34px;
+    margin-bottom: 20px;
+    background: rgb(243, 140, 5);
+    color: rgb(3, 3, 3);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+.search button:hover {
+    background: goldenrod;
+    color: black;
+}
+
+i {
+    margin: 10px;
+}
+
+.cityBtn {
+    width: 100%;
+    color: rgb(7, 7, 7);
+    background: rgb(32, 245, 4);
+}
+
+.cityBtn:hover {
+    background: goldenrod;
+    color: black;
+}
+
+aside, main {
+    position: relative;
+    display: inline-table;
+    margin: 25px;
+    padding: 20px;
+}
+
+#cityWeather {
+    background-color: rgb(45, 243, 19);
+    color: rgb(3, 3, 3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#curWeather {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#fiveDayHeading {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#fiveDay div {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: darkblue;
+    color: rgb(2, 2, 2);
+}
+
+.favorable {
+    background-color: lightgreen;
+}
+.moderate {
+    background-color: yellow;
+    color: black; /* for readability & contrast */
+}
+.severe {
+    background-color: tomato;
+}
+
+@media screen and (min-width: 1408px){
+.container {
+    max-width: 100%;
+}
+}
