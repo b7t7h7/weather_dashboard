@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>5-Day Weather Forecast</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
+
+  <body>
+      <heading>
+          <i class='fas fa-bolt'></i>Weather Dashboard<i class='fas fa-bolt'></i>
+      </heading>
+
+    <div class="container">
+      <div class="columns">
+        <aside class="column is-one-third">
+            <div class="search">
+              <p>Search for a City:</p>
+              <input id="cityInput" type="text" placeholder="City Name" name="search">
+              <button type="submit"><i class="fa fa-search" id="searchBtn"></i></button>
+            </div>
+            <div>
+                Recent Searches:
+                <div id="buttons-view">
+                  <!-- recent searches -->
+                </div>
+            </div>
+        </aside>
+
+        <main class="column">
+          <section id="cityWeather">
+            <p id="curWeather">Current Weather: </p>
+            <p><span id="currentDay"></span></p>
+            <p><span id="city"></span></p>
+            <p><img id="icon"/></p>
+            <p>Temperature: <span id="temp"></span> F</p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Wind Speed: <span id="windSpeed"></span></p>
+            <p>UV Index: <span id="uvIndex"></span></p>
+          </section>
+        
+
+        <section id="fiveDay">
+            <span id="fiveDayHeading"><p>5-Day Forecast: <span id="fiveDayHeading"></p></span>
+            <!-- Day 1 -->
+            <div class="column">
+              <p id="forecast1date"></p>
+              <img id="forecast1icon"/>
+              <p id="forecast1temp"> F</p>
+              <p id="forecast1humidity"></p>
+            </div>
+            <!-- Day 2 -->
+            <div class="column">
+              <p id="forecast2date"></p>
+              <img id="forecast2icon"/>
+              <p id="forecast2temp"> F</p>
+              <p id="forecast2humidity"></p>
+            </div>
+            <!-- Day 3 -->
+            <div column="colum">
+              <p id="forecast3date"></p>
+              <img id="forecast3icon"/>
+              <p id="forecast3temp"> F</p>
+              <p id="forecast3humidity"></p>
+            </div>
+            <!-- Day 4 -->
+            <div class="column">
+              <p id="forecast4date"></p>
+              <img id="forecast4icon"/>
+              <p id="forecast4temp"> F</p>
+              <p id="forecast4humidity"></p>
+            </div>
+            <!-- Day 5 -->
+            <div class="column">
+              <p id="forecast5date"></p>
+              <img id="forecast5icon"/>
+              <p id="forecast5temp"> F</p>
+              <p id="forecast5humidity"></p>
+            </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+      <script src="./script.js"></script>
+  </body>
+
+  <footer>
+
+  </footer>
+
+  
