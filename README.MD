@@ -15,8 +15,8 @@ This project utilized HTML, CSS, Javascript and Bulma for responsive design.
  
  As a USER 
   
- I WANT to be able to enter my location and retrieve weather information for the current week
-​
+ I WANT to be able to enter my location and retrieve weather information for the current week 
+ 
  SO THAT I can keep track the daily weather
  
 
